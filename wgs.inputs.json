@@ -1,0 +1,45 @@
+{
+  "WGS.sample_name": "test",
+  "WGS.ref_name": "hg38",
+  "WGS.fastq1": "oss://pubilc-genome-references-shanghai/test-data/demo/1M_100bp_NA12878_read_1.fq.gz",
+  "WGS.fastq2": "oss://pubilc-genome-references-shanghai/test-data/demo/1M_100bp_NA12878_read_2.fq.gz",
+  "WGS.scattered_calling_intervals_list": "oss://genomics-public-data-shanghai/broad-references/hg38/v0/hg38_wgs_scattered_calling_intervals.txt",
+
+  "WGS.ref_dict": "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
+  "WGS.ref_fasta": "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
+  "WGS.ref_fasta_index": "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
+
+  "WGS.genome_indexes": [
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.alt",
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.sa",
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.amb",
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.bwt",
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.ann",
+    "oss://genomics-public-data-shanghai/broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.pac"
+  ],
+
+
+  "WGS.compression_level": 2,
+
+  "WGS.Alignment.cluster_config": "OnDemand ecs.sn1ne.4xlarge img-ubuntu-vpc",
+  "WGS.MarkDuplicates.cluster_config": "OnDemand ecs.sn1ne.4xlarge img-ubuntu-vpc",
+  "WGS.CreateSequenceGroupingTSV.cluster_config": "OnDemand ecs.sn1.large img-ubuntu-vpc",
+  "WGS.BaseRecalibrator.cluster_config": "OnDemand ecs.sn2ne.xlarge img-ubuntu-vpc",
+  "WGS.GatherBqsrReports.cluster_config": "OnDemand ecs.sn1ne.4xlarge img-ubuntu-vpc",
+  "WGS.ApplyBQSR.cluster_config": "OnDemand ecs.sn2ne.xlarge img-ubuntu-vpc",
+  "WGS.GatherBamFiles.cluster_config": "OnDemand ecs.sn1ne.4xlarge img-ubuntu-vpc",
+
+  "WGS.MarkDuplicates.java_opt": "-Xms4000m",
+  "WGS.BaseRecalibrator.java_opt": "-Xms4000m",
+  "WGS.GatherBqsrReports.java_opt": "-Xms3000m",
+  "WGS.ApplyBQSR.java_opt": "-Xms3000m",
+  "WGS.GatherBamFiles.java_opt": "-Xms2000m",
+
+  "WGS.agg_small_disk": 200,
+  "WGS.agg_medium_disk": 300,
+  "WGS.agg_large_disk": 400,
+
+  "WGS.flowcell_small_disk": 100
+}

@@ -1,0 +1,6 @@
+{
+    "read_from_cache": true,
+    "default_runtime_attributes": {
+        "autoReleaseJob":false
+    }
+}
