@@ -32,7 +32,7 @@ task CreateScatterIntervalList {
     }
     END {
       if ( container ) { print container }
-    }' ~{calling_intervals_list} > ~{ScatterIntervalList.txt}
+    }' ~{calling_intervals_list} > ~{ScatterIntervalList}
   >>>
 
 
