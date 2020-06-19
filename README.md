@@ -1,5 +1,5 @@
 # 简介
-本流程是使用 WDL 编写的基于 GATK 的 WGS 最佳实践，完成从 fastq 到 vcf 的全流程。使用 Cromwell 可以将工作流运行在阿里云批量计算服务上。更多WDL + Crowmell 的最佳实践请参考阿里云官网文档[链接1](https://help.aliyun.com/document_detail/110173.html?spm=a2c4g.11174283.6.604.52c14fd2tM3f35)和[链接2](https://developer.aliyun.com/article/716546)。
+本流程是使用 WDL 编写的基于 GATK 的 WGS 最佳实践，完成从 fastq 到 vcf 的全流程。使用 Cromwell 可以将工作流运行在阿里云批量计算服务上。更多WDL + Cromwell 的最佳实践请参考阿里云官网文档[链接1](https://help.aliyun.com/document_detail/110173.html?spm=a2c4g.11174283.6.604.52c14fd2tM3f35)和[链接2](https://developer.aliyun.com/article/716546)。
 
 # 流程组成
 整个流程由下面几部分组成
